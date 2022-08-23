@@ -13,15 +13,212 @@ body {
   background-color: #091921;
 }
 
+.minute-marks {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.minute-marks li {
+  display:block;
+  width:.2em;
+  height:.6em;
+  background-color:#fff;
+  position:absolute;
+  top:50%; left:50%;
+  margin:-.4em 0 0 -.1em;
+}
+.minute-marks li:first-child {
+  transform:rotate(6deg) translateY(-9.7em)
+}
+.minute-marks li:nth-child(2) {
+  transform:rotate(12deg) translateY(-9.7em)
+}
+.minute-marks li:nth-child(3) {
+  transform:rotate(18deg) translateY(-9.7em)
+}
+.minute-marks li:nth-child(4) {
+  transform:rotate(24deg) translateY(-9.7em)
+}
+.minute-marks li:nth-child(5) {
+  transform:rotate(36deg) translateY(-9.7em)
+}
+.minute-marks li:nth-child(6) {
+  transform:rotate(42deg) translateY(-9.7em)
+}
+.minute-marks li:nth-child(7) {
+  transform:rotate(48deg) translateY(-9.7em)
+}
+.minute-marks li:nth-child(8) {
+  transform:rotate(54deg) translateY(-9.7em)
+}
+.minute-marks li:nth-child(9) {
+  transform:rotate(66deg) translateY(-9.7em)
+}
+.minute-marks li:nth-child(10) {
+  transform:rotate(72deg) translateY(-9.7em)
+}
+.minute-marks li:nth-child(11) {
+  transform:rotate(78deg) translateY(-9.7em)
+}
+.minute-marks li:nth-child(12) {
+  transform:rotate(84deg) translateY(-9.7em)
+}
+.minute-marks li:nth-child(13) {
+  transform:rotate(96deg) translateY(-9.7em)
+}
+.minute-marks li:nth-child(14) {
+  transform:rotate(102deg) translateY(-9.7em)
+}
+.minute-marks li:nth-child(15) {
+  transform:rotate(108deg) translateY(-9.7em)
+}
+.minute-marks li:nth-child(16) {
+  transform:rotate(114deg) translateY(-9.7em)
+}
+.minute-marks li:nth-child(17) {
+  transform:rotate(126deg) translateY(-9.7em)
+}
+.minute-marks li:nth-child(18) {
+  transform:rotate(132deg) translateY(-9.7em)
+}
+.minute-marks li:nth-child(19) {
+  transform:rotate(138deg) translateY(-9.7em)
+}
+.minute-marks li:nth-child(20) {
+  transform:rotate(144deg) translateY(-9.7em)
+}
+.minute-marks li:nth-child(21) {
+  transform:rotate(156deg) translateY(-9.7em)
+}
+.minute-marks li:nth-child(22) {
+  transform:rotate(162deg) translateY(-9.7em)
+}
+.minute-marks li:nth-child(23) {
+  transform:rotate(168deg) translateY(-9.7em)
+}
+.minute-marks li:nth-child(24) {
+  transform:rotate(174deg) translateY(-9.7em)
+}
+.minute-marks li:nth-child(25) {
+  transform:rotate(186deg) translateY(-9.7em)
+}
+.minute-marks li:nth-child(26) {
+  transform:rotate(192deg) translateY(-9.7em)
+}
+.minute-marks li:nth-child(27) {
+  transform:rotate(198deg) translateY(-9.7em)
+}
+.minute-marks li:nth-child(28) {
+  transform:rotate(204deg) translateY(-9.7em)
+}
+.minute-marks li:nth-child(29) {
+  transform:rotate(216deg) translateY(-9.7em)
+}
+.minute-marks li:nth-child(30) {
+  transform:rotate(222deg) translateY(-9.7em)
+}
+.minute-marks li:nth-child(31) {
+  transform:rotate(228deg) translateY(-9.7em)
+}
+.minute-marks li:nth-child(32) {
+  transform:rotate(234deg) translateY(-9.7em)
+}
+.minute-marks li:nth-child(33) {
+  transform:rotate(246deg) translateY(-9.7em)
+}
+.minute-marks li:nth-child(34) {
+  transform:rotate(252deg) translateY(-9.7em)
+}
+.minute-marks li:nth-child(35) {
+  transform:rotate(258deg) translateY(-9.7em)
+}
+.minute-marks li:nth-child(36) {
+  transform:rotate(264deg) translateY(-9.7em)
+}
+.minute-marks li:nth-child(37) {
+  transform:rotate(276deg) translateY(-9.7em)
+}
+.minute-marks li:nth-child(38) {
+  transform:rotate(282deg) translateY(-9.7em)
+}
+.minute-marks li:nth-child(39) {
+  transform:rotate(288deg) translateY(-9.7em)
+}
+.minute-marks li:nth-child(40) {
+  transform:rotate(294deg) translateY(-9.7em)
+}
+.minute-marks li:nth-child(41) {
+  transform:rotate(306deg) translateY(-9.7em)
+}
+.minute-marks li:nth-child(42) {
+  transform:rotate(312deg) translateY(-9.7em)
+}
+.minute-marks li:nth-child(43) {
+  transform:rotate(318deg) translateY(-9.7em)
+}
+.minute-marks li:nth-child(44) {
+  transform:rotate(324deg) translateY(-9.7em)
+}
+.minute-marks li:nth-child(45) {
+  transform:rotate(336deg) translateY(-9.7em)
+}
+.minute-marks li:nth-child(46) {
+  transform:rotate(342deg) translateY(-9.7em)
+}
+.minute-marks li:nth-child(47) {
+  transform:rotate(348deg) translateY(-9.7em)
+}
+.minute-marks li:nth-child(48) {
+  transform:rotate(354deg) translateY(-9.7em)
+}
+
+.digits {
+  width:30em;
+  height:30em;
+  border-radius:15em;
+  top:0; left:50%;
+  margin-left:-15em;
+
+  & li {
+    font-size: 18px;
+    display: block;
+    width: 1.6em;
+    height: 1.6em;
+    color: #fff;
+    position: absolute;
+    top :50%; 
+    left :50%;
+    line-height :1.6em;
+    text-align: center;
+    margin :-.8em 0 0 -.8em;
+  }
+
+& li:nth-child(1) { transform:translate(3.9em, -6.9em) }
+& li:nth-child(2) { transform:translate(6.9em, -4em) }
+& li:nth-child(3) { transform:translate(8em, 0) }
+& li:nth-child(4) { transform:translate(6.8em, 4em) }
+& li:nth-child(5) { transform:translate(3.9em, 6.9em) }
+& li:nth-child(6) { transform:translate(0, 8em) }
+& li:nth-child(7) { transform:translate(-3.9em, 6.9em) }
+& li:nth-child(8) { transform:translate(-6.8em, 4em) }
+& li:nth-child(9) { transform:translate(-8em, 0) }
+& li:nth-child(10) { transform:translate(-6.9em, -4em) }
+& li:nth-child(11) { transform:translate(-3.9em, -6.9em) }
+& li:nth-child(12) { transform:translate(0, -8em) }
+}
+
+
 .clock {
   width: 350px;
   height: 350px;
   display: flex;
   justify-content: center;
   align-items: center;
-  // background-image: url('../img/dragon.jpg');
+  background-image: url('../img/dragon.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   border: 4px solid #091921;
   border-radius: 50%;
   box-shadow: 0 -15px 15px rgba(255, 255, 255, 0.05),
@@ -40,12 +237,22 @@ body {
     content: "";
   }
 
+  .outer-clock-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+
+    overflow: hidden;
+  }
+
+
   .hour {
     position: absolute;
     
     .hours {
-      width: 168px;
-      height: 168px;
+      width: 175px;
+      height: 175px;
       display: flex;
       justify-content: center;
       position: relative;
@@ -54,8 +261,8 @@ body {
       &::before {
         position: absolute;
         width: 8px;
-        height: 60px;
-        background-color: #985875;
+        height: 80px;
+        background:#97005f;                                           
         z-index: 6;
         border-radius: 6px 6px 0 0;
         content:  "";
@@ -78,7 +285,7 @@ body {
         position: absolute;
         width: 4px;
         height: 90px;
-        background-color: #646323;
+        background-color: #00c319;
         z-index: 7;
         border-radius: 6px 6px 0 0;
         content:  "";
@@ -101,7 +308,7 @@ body {
         position: absolute;
         width: 2px;
         height: 150px;
-        background-color: #1e216b;
+        background-color: #fff;
         z-index: 8;
         border-radius: 6px 6px 0 0;
         content:  "";
