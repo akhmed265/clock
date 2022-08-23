@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #091921;
+}
+
+.clock {
+  width: 350px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // background-image: url('../img/dragon.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 4px solid #091921;
+  border-radius: 50%;
+  box-shadow: 0 -15px 15px rgba(255, 255, 255, 0.05),
+  inset 0 -15px 15px rgba(255, 255, 255, 0.05),
+  0 15px 15px rgba(0, 0, 0, 0.3),
+  inset 0 15px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+
+  &::before {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    z-index: 5;
+    content: "";
+  }
+
+  .hour {
+    position: absolute;
+    
+    .hours {
+      width: 168px;
+      height: 168px;
+      display: flex;
+      justify-content: center;
+      position: relative;
+      border-radius: 50%;
+
+      &::before {
+        position: absolute;
+        width: 8px;
+        height: 60px;
+        background-color: #985875;
+        z-index: 6;
+        border-radius: 6px 6px 0 0;
+        content:  "";
+      }
+    }
+  }
+
+  .minute {
+    position: absolute;
+    
+    .minutes {
+      width: 190px;
+      height: 190px;
+      display: flex;
+      justify-content: center;
+      position: relative;
+      border-radius: 50%;
+
+      &::before {
+        position: absolute;
+        width: 4px;
+        height: 90px;
+        background-color: #646323;
+        z-index: 7;
+        border-radius: 6px 6px 0 0;
+        content:  "";
+      }
+    }
+  }
+
+  .second {
+    position: absolute;
+    
+    .seconds {
+      width: 230px;
+      height: 230px;
+      display: flex;
+      justify-content: center;
+      position: relative;
+      border-radius: 50%;
+
+      &::before {
+        position: absolute;
+        width: 2px;
+        height: 150px;
+        background-color: #1e216b;
+        z-index: 8;
+        border-radius: 6px 6px 0 0;
+        content:  "";
+      }
+    }
+  }
+}
